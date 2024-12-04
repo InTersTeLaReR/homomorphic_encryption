@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decrypted Financial Data</title>
+</head>
+<body>
+    <h1>Decrypted Financial Transactions</h1>
+    <table border="1">
+        <tr>
+            <th>User ID</th>
+            <th>Transaction Amount</th>
+        </tr>
+        {% for user_id, amount in transactions.items() %}
+        <tr>
+            <td>{{ user_id }}</td>
+            <td>{{ amount }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
