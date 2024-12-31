@@ -11,7 +11,7 @@ if "public_key" not in st.session_state:
 if "encrypted_transactions" not in st.session_state:
     st.session_state.encrypted_transactions = {}
 
-# Function to encrypt data
+# Function to encrypt data1
 def encrypt_data(data):
     encrypted_data = st.session_state.public_key.encrypt(float(data))
     return encrypted_data
